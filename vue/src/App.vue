@@ -9,6 +9,26 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Song+Myung&display=swap');
+@font-face {
+  font-family: 'OTWelcomeBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF_HambakSnow';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HoengseongHanu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/HoengseongHanu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #app {
   font-family: -윤고딕320, "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

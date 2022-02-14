@@ -4,13 +4,15 @@
     <img src="@/assets/aboutbanner.jpg" class="bannerImage" style="width:100%;">
     <div class="centeredTextOverImage">캄보디아학교세우기모임</div>
   </div>
+<!--  <p class="quot" data-aos="slide-up">“</p>-->
   <p class="aboutText" data-aos="slide-up">
-    2007년 겨울방학 고등학교 교사와 학생, 둘이서 캄보디아 쁘렉농
+    “2007년 겨울방학 고등학교 교사와 학생, 둘이서 캄보디아 쁘렉농
     마을에 교육봉사를 갔었습니다. <br> 신발 없이 맨발로 다니고 지붕에서
     떨어지는 빗물을 받아 식수로 사용하고 상처가 생겨도 치료받지
     않고 다니는 쁘렉농 마을 아이들을 위해서 <br> 학교를 세워주고 싶은
-    꿈을 가졌습니다. 그 후로 다음과 같은 활동을 하고 있습니다.
+    꿈을 가졌습니다. 그 후로 다음과 같은 활동을 하고 있습니다.”
   </p>
+<!--  <p class="quot" data-aos="slide-up">”</p>-->
   <div class="history" data-aos="zoom-in">
   <p class="historyText" >
     2007년 1월 : 캄보디아 교육봉사 여행(고등학교 교사 1명, 고등학생 제자 1명)하면서 학교 세우기 꿈을 가짐
@@ -87,6 +89,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap');
+
 body{
   min-height: 90vh;
   display: flex;
@@ -97,6 +101,15 @@ body{
   padding: 5vh;
   font-style: italic;
   line-height: 40px;
+  font-family: "Nanum Pen Script";
+  font-size: 30px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.quot{
+  font-size: 80px;
+  padding:0px;
+  margin:0px;
 }
 .history{
   text-align: left;
@@ -107,6 +120,7 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  font-family: OTWelcomeBA;
 }
 .bannerImage{
   width: 100vh;
