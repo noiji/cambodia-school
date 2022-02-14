@@ -13,7 +13,7 @@
     꿈을 가졌습니다. 그 후로 다음과 같은 활동을 하고 있습니다.”
   </p>
 <!--  <p class="quot" data-aos="slide-up">”</p>-->
-  <div class="history" data-aos="zoom-in">
+  <div class="history" data-aos="slide-up">
   <p class="historyText" >
     2007년 1월 : 캄보디아 교육봉사 여행(고등학교 교사 1명, 고등학생 제자 1명)하면서 학교 세우기 꿈을 가짐
     <br>

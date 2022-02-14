@@ -1,17 +1,16 @@
 <template>
   <body>
   <Carousel class="carouselHome">
-<!--    <Slide v-for="slide in 3" :key="slide">-->
-<!--      <div class="carousel__item">{{ slide }}</div>-->
-<!--    </Slide>-->
-    <Slide v-for="slide in 3" :key="slide">
-      <div class="carousel__item">
-        <slide>
-          <img src="../assets/logo.png">
-        </slide>
-      </div>
-    </Slide>
-
+    <template #slides>
+      <Slide v-for="slide in slides" :key="slide.id">
+        <div class="carousel__item"><img :src="slide.url" /></div>
+      </Slide>
+    </template>
+<!--    <template #slides>-->
+<!--      <Slide v-for="image in images" :key="image.id">-->
+<!--        <div class="carousel__item"><img :src="image.url" /></div>-->
+<!--      </Slide>-->
+<!--    </template>-->
     <template #addons>
       <Navigation />
       <Pagination />
@@ -21,7 +20,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent} from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 // import App from '../App.vue';
 import 'vue3-carousel/dist/carousel.css';
@@ -35,6 +34,18 @@ export default defineComponent({
     Pagination,
     Navigation,
   },
+  setup() {
+    const slides = [
+      // { id: 1, src: "../assets/aboutbanner.jpg" },
+      // { id: 2, src: "../assets/children.jpg" },
+      // { id: 3, src: "../assets/school.jpg" },
+      { id: 1, url: "https://picsum.photos/300/200?q=1" },
+      { id: 2, url: "https://picsum.photos/300/200?q=2" },
+      { id: 3, url: "https://picsum.photos/300/200?q=3" },
+    ];
+    // const {slides} = ref(_slides);
+    return {slides};
+  }
 });
 </script>
 
