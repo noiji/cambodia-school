@@ -1,18 +1,18 @@
 <template>
-  <body>
-  <div class="banner">
-    <img src="@/assets/aboutbanner.jpg" class="aboutImage" style="width:100%;">
-    <div class="centered">캄보디아학교세우기모임</div>
+  <body >
+  <div class="banner" data-aos="fade-down">
+    <img src="@/assets/aboutbanner.jpg" class="bannerImage" style="width:100%;">
+    <div class="centeredTextOverImage">캄보디아학교세우기모임</div>
   </div>
-  <p class="aboutText">
+  <p class="aboutText" data-aos="slide-up">
     2007년 겨울방학 고등학교 교사와 학생, 둘이서 캄보디아 쁘렉농
     마을에 교육봉사를 갔었습니다. <br> 신발 없이 맨발로 다니고 지붕에서
     떨어지는 빗물을 받아 식수로 사용하고 상처가 생겨도 치료받지
     않고 다니는 쁘렉농 마을 아이들을 위해서 <br> 학교를 세워주고 싶은
     꿈을 가졌습니다. 그 후로 다음과 같은 활동을 하고 있습니다.
   </p>
-  <div class="history">
-  <p class="historyText">
+  <div class="history" data-aos="zoom-in">
+  <p class="historyText" >
     2007년 1월 : 캄보디아 교육봉사 여행(고등학교 교사 1명, 고등학생 제자 1명)하면서 학교 세우기 꿈을 가짐
     <br>
     2007년 8월 : 캄보디아 교육봉사 여행 (교사 7명, 대학생 2명)
@@ -92,27 +92,27 @@ body{
   display: flex;
   flex-direction: column;
 }
-.banner {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.aboutImage{
-  width: auto;
-  height: 70%;
-  op
-}
+
 .aboutText{
   padding: 5vh;
   font-style: italic;
-  line-height: 30px;
+  line-height: 40px;
 }
 .history{
   text-align: left;
   line-height: 30px;
   padding-left: 3vh;
 }
-.centered {
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bannerImage{
+  width: 100vh;
+  height: 50vh;
+}
+.centeredTextOverImage {
   font-size: xxx-large;
   font-weight: bold;
   position: absolute;
