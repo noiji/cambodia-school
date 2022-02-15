@@ -24,23 +24,28 @@
 
 1. Main Page
 
-<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fngxk0%2FbtrtlUSWu17%2Fgl20HGm5OrJymzKYPwhXik%2Fimg.png" width=70% align=center > </img>
+<p align="center">
+<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fngxk0%2FbtrtlUSWu17%2Fgl20HGm5OrJymzKYPwhXik%2Fimg.png" width=70% align=center > </img></p>
 
 2. Menu(1): Introduction
 
-<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbBeTYg%2FbtrtnDXie1A%2FWeK5g3HBxbGcK9JCwqYp70%2Fimg.png" width=70% align=center > </img>
+<p align="center">
+<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbBeTYg%2FbtrtnDXie1A%2FWeK5g3HBxbGcK9JCwqYp70%2Fimg.png" width=70% align=center > </img></p>
 
 3. Menu(2): Activity
 
-<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Frj2Zr%2FbtrtpRnGWMp%2FdteOqecjIG5DZhM3HZNtY1%2Fimg.png" width=70% align=center > </img>
+<p align="center">
+<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Frj2Zr%2FbtrtpRnGWMp%2FdteOqecjIG5DZhM3HZNtY1%2Fimg.png" width=70% align=center > </img></p>
 
 4. Menu(3): Participate
 
-<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0y5Jg%2FbtrtlaO4W7c%2FTEexwia6bM3tiZCSx8zebk%2Fimg.png" width=70% align=center > </img>
+<p align="center">
+<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0y5Jg%2FbtrtlaO4W7c%2FTEexwia6bM3tiZCSx8zebk%2Fimg.png" width=70% align=center > </img></p>
 
 5. Menu(4): Annual Report
 
-<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQ1ekX%2Fbtrtq9H7Uo5%2FUkd1vN0ZP2QskQ9wkwyl60%2Fimg.png" width=70% align=center > </img>
+<p align="center">
+<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQ1ekX%2Fbtrtq9H7Uo5%2FUkd1vN0ZP2QskQ9wkwyl60%2Fimg.png" width=70% align=center > </img></p>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
