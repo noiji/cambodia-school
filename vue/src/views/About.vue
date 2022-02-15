@@ -111,7 +111,7 @@ body{
 }
 .history{
   text-align: left;
-  line-height: 30px;
+  line-height: 2;
   padding-left: 3vh;
 }
 .banner {

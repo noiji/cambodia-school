@@ -90,9 +90,10 @@ body {
 }
 .containerOfTwo{
   background-color: #f0f0f0;
-  padding-left: 10vh;
-  padding-right: 10vh;
-  height: 50vh;
+  /*padding-left: 10vh;*/
+  /*padding-right: 10vh;*/
+  padding: 5%;
+  height: auto;
   alignment: center;
 }
 .inquiry{

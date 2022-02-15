@@ -52,7 +52,7 @@ body{
 }
 .activityCard{
   margin: 5vh;
-  height: 40vh;
+  height: auto;
 }
 .activityText{
   width: 50vh;
@@ -63,8 +63,7 @@ body{
   font-family: "OTWelcomeBA";
 }
 .activityDetail{
-
-  line-height: 2vh;
+  line-height: 2;
 }
 .title{
 

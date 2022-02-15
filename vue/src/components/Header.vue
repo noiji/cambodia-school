@@ -6,9 +6,10 @@
         <img class="logo" src="./logo.png" alt="logo" >
       </router-link>
       <div class = "menu">
-      <router-link to="/about" style="text-decoration: none;color: inherit; margin-left: 80px;">소개</router-link>
-      <router-link to="/activity" style="text-decoration: none; color: inherit; margin-left: 80px;">활동</router-link>
-      <router-link to="/donate" style="text-decoration: none; color: inherit; margin-left: 80px;">함께해요</router-link>
+        <router-link to="/about" style="text-decoration: none;color: inherit; margin-left: 80px;">소개</router-link>
+        <router-link to="/activity" style="text-decoration: none; color: inherit; margin-left: 80px;">활동</router-link>
+        <router-link to="/donate" style="text-decoration: none; color: inherit; margin-left: 80px;">함께해요</router-link>
+        <router-link to="/board" style="text-decoration: none; color: inherit; margin-left: 80px;">게시판</router-link>
       <!--      <a class="github" href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">-->
       <!--        Built with Vue.js-->
       <!--      </a>-->
@@ -66,6 +67,9 @@ export default {
   top:20%;
 }
 
+.menu router-link{
+  text-decoration: none; color: inherit; margin-left: 80px;
+}
 @media (max-width: 860px) {
   .header .inner {
   padding: 15px 30px}

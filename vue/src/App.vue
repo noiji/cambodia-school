@@ -9,7 +9,7 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Song+Myung&display=swap');
 @font-face {
   font-family: 'OTWelcomeBA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
@@ -28,9 +28,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 #app {
-  font-family: -윤고딕320, "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Pretendard-Regular", "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
