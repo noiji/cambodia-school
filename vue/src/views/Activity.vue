@@ -11,6 +11,7 @@
         <div class="activityTitle" style="text-align: left;">1. 학교 설립 및 운영</div>
         <div class="activityDetail" style="text-align: left;">쁘렉농 희망학교와 깜뽕츠낭 희망학교를 개교 및 운영 중에 있습니다. 전·현직 교사와 많은 분들이 뜻을 합쳐서  ‘쁘렉농 희망학교’가 2011년 10월 개교되었습니다. 유치원(25명), 초등학교(190명) 과정이며 2019년 11월 중학교를 개교했으며, 쁘렉농 마을 청/장년들을 위해서 기술학교(용접, 오토바이 정비, 미용, 봉재)를 세우는 꿈을 갖고 있습니다. 또 다른 지역 깜뽕츠낭에 ‘깜뽕츠낭 꿈의학교’가 2014년 11월  세워졌습니다. 유치원(24명) 초등학교(144명) 과정이며  2019년 9월 중학교를 개교하였습니다.</div>
       </div>
+      <Carousel></Carousel>
     </container>
 
     <container class="activityCard" data-aos="zoom-in">
