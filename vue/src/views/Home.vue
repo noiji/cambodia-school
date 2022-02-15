@@ -3,14 +3,9 @@
   <Carousel class="carouselHome">
     <template #slides>
       <Slide v-for="slide in slides" :key="slide.id">
-        <div class="carousel__item"><img :src="slide.url" /></div>
+        <div class="carousel__item"><img :src="slide.src" /></div>
       </Slide>
     </template>
-<!--    <template #slides>-->
-<!--      <Slide v-for="image in images" :key="image.id">-->
-<!--        <div class="carousel__item"><img :src="image.url" /></div>-->
-<!--      </Slide>-->
-<!--    </template>-->
     <template #addons>
       <Navigation />
       <Pagination />
@@ -34,18 +29,18 @@ export default defineComponent({
     Pagination,
     Navigation,
   },
-  setup() {
-    const slides = [
-      // { id: 1, src: "../assets/aboutbanner.jpg" },
-      // { id: 2, src: "../assets/children.jpg" },
-      // { id: 3, src: "../assets/school.jpg" },
-      { id: 1, url: "https://picsum.photos/300/200?q=1" },
-      { id: 2, url: "https://picsum.photos/300/200?q=2" },
-      { id: 3, url: "https://picsum.photos/300/200?q=3" },
-    ];
-    // const {slides} = ref(_slides);
-    return {slides};
-  }
+  data(){
+    return {
+      slides : [
+        // { id: 1, src: "../assets/aboutbanner.jpg" },
+        // { id: 2, src: "../assets/children.jpg" },
+        // { id: 3, src: "../assets/school.jpg" },
+        { id: 1, src: require(`@/assets/logo.png`) },
+        { id: 2, src: "https://picsum.photos/300/200?q=2" },
+        { id: 3, src: "https://picsum.photos/300/200?q=3" },
+      ]
+    }
+  },
 });
 </script>
 
@@ -69,9 +64,9 @@ body{
   justify-content: center;
   align-items: center;
 }
-
-.carousel__slide {
-  padding: 10px;
+img{
+  width: inherit;
+  height: inherit;
 }
 
 .carousel__prev,
