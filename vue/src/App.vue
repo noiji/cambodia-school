@@ -34,6 +34,8 @@
   font-weight: 400;
   font-style: normal;
 }
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-alpine.css";
 #app {
   font-family: "Pretendard-Regular", "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

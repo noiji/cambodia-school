@@ -94,7 +94,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-
 .aboutText{
   padding: 5vh;
   font-style: italic;

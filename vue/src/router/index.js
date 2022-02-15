@@ -3,7 +3,7 @@ import Home from '@/views/Home.vue'
 import About from "@/views/About";
 import Activity from "@/views/Activity";
 import Donate from "@/views/Donate";
-import Board from "@/views/Board";
+import Report from "@/views/Report";
 
 // const routes = [
 //   {
@@ -26,7 +26,7 @@ const routes = [
   { path: '/about', component: About },
   { path: '/activity', component: Activity },
   { path: '/donate', component: Donate },
-  { path: '/board', component: Board },
+  { path: '/report', component: Report },
 ]
 
 const router = createRouter({
