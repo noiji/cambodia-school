@@ -9,7 +9,7 @@
     따뜻한 참여가 큰 힘이 됩니다.
   </p>
   <!--  <p class="quot" data-aos="slide-up">”</p>-->
-  <container class="containerOfTwo" data-aos="slide-up">
+  <container class="containerOfTwo">
     <container class = "inquiry">
       <div class = "title">
       문의
@@ -124,7 +124,6 @@ body {
   width: 100vh;
   height: 50vh;
 }
-
 .centeredTextOverImage {
   font-size: xxx-large;
   font-weight: bold;
