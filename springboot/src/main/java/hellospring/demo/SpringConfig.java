@@ -16,12 +16,12 @@ import org.springframework.context.annotation.Configuration;
 public class SpringConfig {
 
     //spring jpa로 jpa 대체
-    private final MemberRepository memberRepository;
+//    private final MemberRepository memberRepository;
 
-    @Autowired //생성자 하나여서 생략해도 됨
-    public SpringConfig(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
+//    @Autowired //생성자 하나여서 생략해도 됨
+//    public SpringConfig(MemberRepository memberRepository) {
+//        this.memberRepository = memberRepository;
+//    }
 
 //    //jpa 사용시 필요
 //    private EntityManager em;
@@ -31,11 +31,11 @@ public class SpringConfig {
 //        this.em = em;
 //    }
 
-    @Bean
-    public MemberService memberService() {
-        return new MemberService(memberRepository);
-    }
-//
+//    @Bean
+//    public MemberService memberService() {
+//        return new MemberService(memberRepository);
+//    }
+////
 //    @Bean
 //    public MemberRepository memberRepository() {
 //// return new MemoryMemberRepository();
