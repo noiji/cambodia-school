@@ -21,6 +21,7 @@
 
 - This project is about developing the website for the Non-Governmental Organization.
 - Demo: https://camschool.org/
+- DevLog(KOR): https://noeasylog.tistory.com/category/Projects/NGO%20%EC%86%8C%EA%B0%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EA%B0%9C%EB%B0%9C
 
 1. Main Page
 
