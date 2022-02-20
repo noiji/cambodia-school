@@ -25,6 +25,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
           mask-aws-account-id: true
+      - name: Change directory
+        run: cd vue/
       - name: Install dependencies
         run: npm install
       - name: Build
