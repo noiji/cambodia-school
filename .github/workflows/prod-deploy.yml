@@ -25,17 +25,18 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
           mask-aws-account-id: true
-      - name: Change directory
-        run: cd vue/
 #       - name: Install dependencies
 #         run: npm install
       - name: Build
-        run: npm run build
+        run: 
+          cd vue
+          npm run build
       - name: Deploy to S3
         env:
           AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
         run:
+          cd vue
           aws s3 sync ./dist s3://camschool
           aws s3 website s3://camschool/ --index-document index.html
       - name: Invalidate CloudFront Cache
