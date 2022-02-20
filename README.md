@@ -20,7 +20,7 @@
 ## About The Project
 
 - This project is about developing the website for the Non-Governmental Organization.
-- Two days were taken to complete the project.
+- Demo: https://camschool.org/
 
 1. Main Page
 
