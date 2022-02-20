@@ -124,14 +124,14 @@ body {
   width: 100vh;
   height: 50vh;
 }
-.centeredTextOverImage {
-  font-size: xxx-large;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/*.centeredTextOverImage {*/
+/*  font-size: xxx-large;*/
+/*  font-weight: bold;*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
 .list{
   margin-bottom: 3vh;
   list-style-type: none;

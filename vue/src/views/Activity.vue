@@ -2,7 +2,7 @@
 
   <body>
     <div class="banner" data-aos="fade-down">
-      <img src="@/assets/children.jpg" class="bannerImage" style="width:100%;">
+      <img src="@/assets/intro_pic.png" class="bannerImage" style="width:100%;">
       <div class="centeredTextOverImage">활동</div>
     </div>
     <container class="activityCard" data-aos="zoom-in">

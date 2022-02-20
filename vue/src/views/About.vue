@@ -1,7 +1,7 @@
 <template>
   <body >
   <div class="banner" data-aos="fade-down">
-    <img src="@/assets/aboutbanner.jpg" class="bannerImage" style="width:100%;">
+    <img src="@/assets/visual_01.png" class="bannerImage" style="width:100%;">
     <div class="centeredTextOverImage">캄보디아학교세우기모임</div>
   </div>
 <!--  <p class="quot" data-aos="slide-up">“</p>-->
@@ -123,12 +123,12 @@ body{
   width: 100vh;
   height: 50vh;
 }
-.centeredTextOverImage {
-  font-size: xxx-large;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/*.centeredTextOverImage {*/
+/*  font-size: xxx-large;*/
+/*  font-weight: bold;*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
 </style>
