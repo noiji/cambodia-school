@@ -3,3 +3,4 @@
 springboot/.elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+springboot/
