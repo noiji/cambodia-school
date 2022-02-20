@@ -33,14 +33,17 @@ export default {
   background-color: white;
   position: fixed;
   z-index: 999;
-  height: 80px;
+  /*height: 80px;*/
+  height: 10vh;
+  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
   font-family: OTWelcomeBA;
 }
 .inner {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   margin: 4%;
   align-items: center;
@@ -48,8 +51,10 @@ export default {
   /*padding: 15px 5px;*/
 }
 .logo{
-  width: 300px;
-  margin-right: 10px;
+  width: 20%;
+  min-width: 200px;
+  max-width: 300px;
+  padding-right: 1vh;
   padding-left: 1vh;
   display: inline-block;
   float:left;
@@ -59,20 +64,20 @@ export default {
 .menu {
   color: #42b983;
   padding-top: 1vh;
-  margin-right: 5%;
-  font-size: 20px;
+  margin-right: 8vh;
+  font-size: 1.2em;
   font-weight: bold;
   float:right;
   position: relative;
   top:20%;
 }
-
 .menu router-link{
-  text-decoration: none; color: inherit; margin-left: 80px;
+  text-decoration: none; color: inherit;
+  /*margin-left: 5vw;*/
 }
-@media (max-width: 860px) {
-  .header .inner {
-  padding: 15px 30px}
-}
+/*@media (max-width: 860px) {*/
+/*  .header .inner {*/
+/*  padding: 15px 30px}*/
+/*}*/
 
 </style>

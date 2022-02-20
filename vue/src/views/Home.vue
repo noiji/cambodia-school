@@ -52,11 +52,14 @@ body{
   flex-direction: column;
 }
 .carouselHome{
+  height: 50%;
+  width: 95vw;
   margin-top: 150px;
+  align-self: center;
 }
 .carouselHome__item {
   /*min-height: 650px;*/
-  height: 650px;
+  height: 100%;
   width: 100%;
   background-color: var(--vc-clr-primary);
   color:  var(--vc-clr-white);
@@ -76,7 +79,8 @@ img{
   border: 5px solid white;
 }
 .centeredTextOverImage {
-  font-size: xxx-large;
+  /*font-size: xxx-large;*/
+  font-size: 2em;
   font-weight: bold;
   position: absolute;
   top: 50%;
