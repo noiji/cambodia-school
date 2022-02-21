@@ -17,11 +17,25 @@ import Footer from './components/Footer'
 // import Home from './views/Home'
 
 export default {
+  name: 'App',
   components: {
     // About,
     Footer,
     Header,
     // Home
+  },
+  data: ()=>({
+    isMobile: false
+  }),
+  mounted () {
+    this.onResize()
+    window.addEventListener('resize', this.onResize, { passive: true })
+  },
+  methods: {
+    onResize () {
+      this.isMobile = window.innerWidth < 600
+      console.log("Mobile: ".concat(this.isMobile))
+    }
   }
 }
 </script>
