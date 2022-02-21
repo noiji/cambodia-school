@@ -6,46 +6,50 @@
   </div>
   <container class="report-container" data-aos="slide-up">
     <dropdown :id = "drop-down"
-              class="drop-down-year"
               :options="dropdownOptions"
               :selected="dropdownOptions[0]"
-              v-on:updateOption="methodToRunOnSelect"
-              :placeholder="'연도를 선택하세요'"
-              :closeOnOutsideClick="boolean">
+              v-on:updateOption="updateYear">
     </dropdown>
     <br>
-    <button class = "download"><a href="https://m.cafe.daum.net/_attachefileview?grpcode=combodiaschool&url=https://t1.daumcdn.net/cafeattach/1QmbR/6dd01f91c0583f457e1e75245241d78fb712a536?download&filekey=/cafeattach/1QmbR/6dd01f91c0583f457e1e75245241d78fb712a536&service=cafe&filename=2021%EB%85%84%EB%8F%84%20%EC%88%98%EC%A7%80%EA%B2%B0%EC%82%B0%EC%84%9C.hwp" target="_blank">파일 다운로드</a></button>
-    <Table2021></Table2021>
+<!--    <button class = "download"><a href="https://m.cafe.daum.net/_attachefileview?grpcode=combodiaschool&url=https://t1.daumcdn.net/cafeattach/1QmbR/6dd01f91c0583f457e1e75245241d78fb712a536?download&filekey=/cafeattach/1QmbR/6dd01f91c0583f457e1e75245241d78fb712a536&service=cafe&filename=2021%EB%85%84%EB%8F%84%20%EC%88%98%EC%A7%80%EA%B2%B0%EC%82%B0%EC%84%9C.hwp" target="_blank">파일 다운로드</a></button>-->
+    <img class = "reportImage" :src = "yearReportImage">
   </container>
   </body>
 </template>
 
 <script>
 import dropdown from 'vue-dropdowns';
-import Table2021 from "@/components/Table2021";
+
 export default({
   name: 'Report',
   components: {
     'dropdown': dropdown,
-    Table2021,
   },
   data() {
     return {
+      selectedYear: "2021",
       dropdownOptions: [
-        { id: 0, name: '2021'},
-        { id: 1, name: '2020'},
-        { id: 2, name: '2019'},
-        { id: 3, name: '2018'},
-        { id: 4, name: '2017'},
-        { id: 5, name: '2016'},
+        { id: 2021, name: '2021'},
+        { id: 2020, name: '2020'},
+        { id: 2019, name: '2019'},
+        { id: 2018, name: '2018'},
+        { id: 2017, name: '2017'},
       ],
+      yearReportImage:
+          require("@/assets/reports/".concat("2021").concat(".png"))
     }
   },
   methods: {
-    methodToRunOnSelect(payload) {
-      this.object = payload;
+    updateYear(payload){
+      this.object = payload
+      this.selectedYear = this.object.name
+      this.yearReportImage = require("@/assets/reports/".concat(this.selectedYear).concat(".png"))
+      console.log("year after update: ".concat(this.selectedYear));
     }
-  }
+  },
+  mounted(){
+    this.yearReportImage = require("@/assets/reports/".concat(this.selectedYear).concat(".png"))
+  },
 });
 </script>
 
@@ -61,21 +65,25 @@ body{
   padding: 40px 5%;
   align-items: center;
 }
-.drop-down-year {
+.reportImage{
+  margin: 10px 10px;
+  width: 70%
+}
+drop-down {
   border-radius: 5px;
 }
-.download{
-  background-color: #42b983;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 8px;
-  float: right;
-}
+/*.download{*/
+/*  background-color: #42b983;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*  padding: 10px 15px;*/
+/*  text-align: center;*/
+/*  display: inline-block;*/
+/*  font-size: 16px;*/
+/*  border-radius: 8px;*/
+/*  float: right;*/
+/*}*/
 a{
   text-decoration: none;
   color: inherit;
