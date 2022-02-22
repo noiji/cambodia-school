@@ -70,3 +70,6 @@ body{
     width: 100vh;
     height: 50vh;
 }
+.titleText{
+    font-size: 5vw;
+}

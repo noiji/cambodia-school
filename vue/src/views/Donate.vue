@@ -5,13 +5,13 @@
     <div class="centeredTextOverImage">함께해요</div>
   </div>
   <!--  <p class="quot" data-aos="slide-up">“</p>-->
-  <p class="headText" data-aos="slide-up">
+  <p id = "headText" class = "titleText" data-aos="slide-up">
     따뜻한 참여가 큰 힘이 됩니다.
   </p>
   <!--  <p class="quot" data-aos="slide-up">”</p>-->
   <container class="containerOfTwo">
-    <container class = "inquiry">
-      <div class = "title">
+    <container id = "inquiry">
+      <div id = "title1" class = "titleText">
       문의
       </div>
       <li class = "list">
@@ -23,8 +23,8 @@
         </p>
       </li>
     </container>
-    <container class = "donate">
-      <div class = "title">
+    <container id = "donate">
+      <div id = "title2" class = "titleText">
       후원계좌
       </div>
       <li class = "list">
@@ -73,14 +73,10 @@ export default {
 </script>
 
 <style>
-.headText {
+#headText {
   /*height: 30vh;*/
-  padding: 20vh;
-  line-height: 40px;
+  padding: 20vh 0;
   font-family: "SF_HambakSnow";
-  font-size: 45px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .containerOfTwo{
   background-color: #f0f0f0;
@@ -90,20 +86,19 @@ export default {
   height: auto;
   alignment: center;
 }
-.inquiry{
+#inquiry{
   width: 50%;
   position: relative;
   top:20%;
   float: left;
 }
-.donate{
+#donate{
   width: 50%;
   position: relative;
   top:20%;
   float: right;
 }
-.title{
-  font-size: xxx-large;
+#title1, #title2{
   font-family: "OTWelcomeBA";
   color: #42b983;
 }

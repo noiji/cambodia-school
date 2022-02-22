@@ -62,12 +62,12 @@ body{
 .report-container{
   /*padding-left: 10px;*/
   /*padding-right: 10px;*/
-  padding: 40px 5%;
+  padding: 5vh 10vw;
   align-items: center;
 }
 .reportImage{
   margin: 10px 10px;
-  width: 70%
+  width: 70%;
 }
 drop-down {
   border-radius: 5px;
