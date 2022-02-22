@@ -12,10 +12,6 @@
 <script>
 import Header from './components/Header'
 import Footer from './components/Footer'
-
-// import About from "@/views/About";
-// import Home from './views/Home'
-
 export default {
   name: 'App',
   components: {
