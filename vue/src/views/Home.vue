@@ -46,15 +46,10 @@ export default ({
 </script>
 
 <style>
-body{
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
 .carouselHome{
-  height: 50%;
+  /*height: 50%;*/
   width: 95vw;
-  margin-top: 150px;
+  /*margin-top: 0px;*/
   align-self: center;
 }
 .carouselHome__item {
@@ -78,15 +73,5 @@ img{
   box-sizing: content-box;
   border: 5px solid white;
 }
-.centeredTextOverImage {
-  /*font-size: xxx-large;*/
-  font-size: 2em;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: SF_HambakSnow;
-  text-shadow: 2px 2px #303030;
-}
+
 </style>

@@ -1,7 +1,7 @@
 <template>
 
   <body>
-    <div class="banner" data-aos="fade-down">
+    <div class="banner" data-aos="fade-up">
       <img src="@/assets/intro_pic.png" class="bannerImage" style="width:100%;">
       <div class="centeredTextOverImage">활동</div>
     </div>
@@ -11,22 +11,7 @@
         <div class="activityTitle" >1. 학교 설립 및 운영</div>
         <div class="activityDetail">쁘렉농 희망학교와 깜뽕츠낭 희망학교를 개교 및 운영 중에 있습니다. 전·현직 교사와 많은 분들이 뜻을 합쳐서  ‘쁘렉농 희망학교’가 2011년 10월 개교되었습니다. 유치원(25명), 초등학교(190명) 과정이며 2019년 11월 중학교를 개교했으며, 쁘렉농 마을 청/장년들을 위해서 기술학교(용접, 오토바이 정비, 미용, 봉재)를 세우는 꿈을 갖고 있습니다. 또 다른 지역 깜뽕츠낭에 ‘깜뽕츠낭 꿈의학교’가 2014년 11월  세워졌습니다. 유치원(24명) 초등학교(144명) 과정이며  2019년 9월 중학교를 개교하였습니다.</div>
       </div>
-      <Carousel class="carouselActivityR" :snapAlign="start" :wrap-around="true" :autoplay="5000">
-        <template #slides>
-          <Slide v-for="slide in slides1" :key="slide.id">
-            <div class="carouselActivity__item">
-              <img :src="slide.src" />
-              <div class="centeredTextOverImage">
-                {{slide.text}}
-              </div>
-            </div>
-          </Slide>
-        </template>
-        <template #addons >
-<!--          <Navigation   />-->
-          <Pagination />
-        </template>
-      </Carousel>
+      <img class = "activityImageR" :src = activityImages[0] >
     </container>
 
     <container class="activityCard" data-aos="zoom-in">
@@ -38,22 +23,8 @@
           캄보디아 세곳의 낙후지역(스텅스러우, 벙축, 싸앙)  어린이·청소년들이
           한국 후원자와 결연(월 2만원)을 맺어 초등학교, 중학교를 다니도록 돕고 있습니다.</div>
       </div>
-      <Carousel class="carouselActivityL" :snapAlign="start" :wrap-around="true" :autoplay="5000">
-        <template #slides>
-          <Slide v-for="slide in slides1" :key="slide.id">
-            <div class="carouselActivity__item">
-              <img :src="slide.src" />
-              <div class="centeredTextOverImage">
-                {{slide.text}}
-              </div>
-            </div>
-          </Slide>
-        </template>
-        <template #addons >
-          <!--          <Navigation   />-->
-          <Pagination />
-        </template>
-      </Carousel>
+      <img class = "activityImageL" :src = activityImages[1] >
+
     </container>
 
     <container class="activityCard" data-aos="zoom-in">
@@ -62,22 +33,7 @@
         <div class="activityTitle">3. 교육/의료봉사</div>
         <div class="activityDetail">쁘렉농 희망학교와 깜뽕츠낭 희망학교를 개교 및 운영 중에 있습니다. 전·현직 교사와 많은 분들이 뜻을 합쳐서  ‘쁘렉농 희망학교’가 2011년 10월 개교되었습니다. 유치원(25명), 초등학교(190명) 과정이며 2019년 11월 중학교를 개교했으며, 쁘렉농 마을 청/장년들을 위해서 기술학교(용접, 오토바이 정비, 미용, 봉재)를 세우는 꿈을 갖고 있습니다. 또 다른 지역 깜뽕츠낭에 ‘깜뽕츠낭 꿈의학교’가 2014년 11월  세워졌습니다. 유치원(24명) 초등학교(144명) 과정이며  2019년 9월 중학교를 개교하였습니다.</div>
       </div>
-      <Carousel class="carouselActivityR" :snapAlign="start" :wrap-around="true" :autoplay="5000">
-        <template #slides>
-          <Slide v-for="slide in slides1" :key="slide.id">
-            <div class="carouselActivity__item">
-              <img :src="slide.src" />
-              <div class="centeredTextOverImage">
-                {{slide.text}}
-              </div>
-            </div>
-          </Slide>
-        </template>
-        <template #addons >
-          <!--          <Navigation   />-->
-          <Pagination />
-        </template>
-      </Carousel>
+      <img class = "activityImageR" :src = activityImages[2] >
     </container>
 
   </body>
@@ -85,20 +41,14 @@
 
 
 <script>
-import { Carousel, Pagination, Slide } from 'vue3-carousel';
-import 'vue3-carousel/dist/carousel.css';
-
 export default {
   name: "Activity",
-  components: {
-    Carousel, Pagination, Slide,
-  },
   data() {
     return {
-      slides1: [
-        {id: 1, src: require(`@/assets/children.jpg`), text: "1"},
-        {id: 2, src: require(`@/assets/aboutbanner.jpg`), text: "2"},
-        {id: 3, src: require(`@/assets/school1.jpg`), text: "3"},
+      activityImages: [
+          require(`@/assets/children.jpg`),
+          require(`@/assets/aboutbanner.jpg`),
+          require(`@/assets/school1.jpg`),
       ],
     }
   }
@@ -107,11 +57,7 @@ export default {
 </script>
 
 <style scoped>
-body{
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
+
 .activityCard{
   margin: 20px;
   height: auto;
@@ -142,36 +88,22 @@ p{
   margin-top: 100px;
   font-size: 100px;
 }
-.activityCard .carouselActivityR{
-  width: 400px;
+.activityCard img {
+  width: 30%;
   height: auto;
   position: relative;
+  margin-top: 5vh;
+}
+.activityCard .activityImageR{
   float: right;
-  margin-top: 50px;
 }
-.activityCard .carouselActivityL{
-  width: 400px;
-  height: auto;
-  position: relative;
+.activityCard .activityImageL {
   float: left;
-  padding-top: 20px;
 }
-.carouselActivity__item {
-  /*background-color: var(--vc-clr-primary);*/
-  color:  var(--vc-clr-white);
-  /*font-size: 20px;*/
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carouselActivity__item img{
-  width: 400px;
-  height: auto;
-}
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+@media screen and (max-width: 740px) {
+  .activityCard img {
+    width: 100%;
+    float: none;
+  }
 }
 </style>

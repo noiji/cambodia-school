@@ -1,6 +1,6 @@
 <template>
   <body>
-  <div class="banner" data-aos="fade-down">
+  <div class="banner" data-aos="fade-up">
     <img src="@/assets/school1.jpg" class="bannerImage" style="width:100%;">
     <div class="centeredTextOverImage">재정보고</div>
   </div>

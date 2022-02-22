@@ -32,7 +32,11 @@
     text-align: center;
     color: #2c3e50;
 }
-
+body{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
 #nav {
     padding: 30px;
 }
@@ -44,4 +48,25 @@
 
 #nav a.router-link-exact-active {
     color: #42b983;
+}
+.centeredTextOverImage {
+    /*font-size: xxx-large;*/
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: SF_HambakSnow;
+    text-shadow: 2px 2px #303030;
+}
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: OTWelcomeBA;
+}
+.bannerImage {
+    width: 100vh;
+    height: 50vh;
 }

@@ -1,6 +1,6 @@
 <template>
   <body >
-  <div class="banner" data-aos="fade-down">
+  <div class="banner" data-aos="fade-up">
     <img src="@/assets/visual_01.png" class="bannerImage" style="width:100%;">
     <div class="centeredTextOverImage">캄보디아학교세우기모임</div>
   </div>
@@ -89,11 +89,6 @@ export default {
 </script>
 
 <style>
-body{
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
 .aboutText{
   padding: 5vh;
   font-style: italic;
@@ -103,32 +98,9 @@ body{
   margin-top:0px;
   margin-bottom:0px;
 }
-.quot{
-  font-size: 80px;
-  padding:0px;
-  margin:0px;
-}
 .history{
   text-align: left;
   line-height: 2;
   padding-left: 3vh;
 }
-.banner {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-family: OTWelcomeBA;
-}
-.bannerImage{
-  width: 100vh;
-  height: 50vh;
-}
-/*.centeredTextOverImage {*/
-/*  font-size: xxx-large;*/
-/*  font-weight: bold;*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  left: 50%;*/
-/*  transform: translate(-50%, -50%);*/
-/*}*/
 </style>

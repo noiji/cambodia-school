@@ -1,6 +1,6 @@
 <template>
   <body>
-  <div class="banner" data-aos="fade-down">
+  <div class="banner" data-aos="fade-up">
     <img src="@/assets/aboutbanner.jpg" class="bannerImage" style="width:100%;">
     <div class="centeredTextOverImage">함께해요</div>
   </div>
@@ -73,12 +73,6 @@ export default {
 </script>
 
 <style>
-body {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .headText {
   /*height: 30vh;*/
   padding: 20vh;
@@ -113,25 +107,6 @@ body {
   font-family: "OTWelcomeBA";
   color: #42b983;
 }
-.banner {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-family: OTWelcomeBA;
-}
-
-.bannerImage {
-  width: 100vh;
-  height: 50vh;
-}
-/*.centeredTextOverImage {*/
-/*  font-size: xxx-large;*/
-/*  font-weight: bold;*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  left: 50%;*/
-/*  transform: translate(-50%, -50%);*/
-/*}*/
 .list{
   margin-bottom: 3vh;
   list-style-type: none;
